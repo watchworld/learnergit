@@ -1,0 +1,16 @@
+1、CreateWindowEx创建窗口。在某些机器上出现背景色是透明的也就是没有图层。检查代码
+    WNDCLASS ws = { 0 };
+  ws.style = CS_HREDRAW | CS_VREDRAW;
+  ws.lpfnWndProc = &AdminControl::WindowProc;
+  ws.cbClsExtra = 0;
+  ws.cbWndExtra = 0;
+  ws.hInstance = ::GetModuleHandle(NULL);
+  ws.hIcon = NULL;
+  ws.hCursor = NULL;
+  ws.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);;
+  ws.lpszMenuName = NULL;
+  ws.lpszClassName = TEXT("AdminWnd1990");
+  RegisterClass(&ws);
+  DWORD style = WS_OVERLAPPEDWINDOW;
+  style &= ~WS_MAXIMIZEBOX;
+  发现ws.hbrBackground给了NULL值，在本机笔记本上默认是白色背景，但有些机器就不是。
