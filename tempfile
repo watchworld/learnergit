@@ -1,0 +1,20 @@
+http://blog.csdn.net/chengyingzhilian/article/details/8660136
+http://www.cnblogs.com/andyque/archive/2011/03/18/1988097.html
+http://www.rpmfind.net/linux/rpm2html/search.php?query=gcc 寻找gcc
+CrashHandler android库使用说明
+gstreamer
+
+Button *button1 = static_cast<Button*>(m_csbNode->getChildByName("Button_1"));  
+button1->addClickEventListener(CC_CALLBACK_1(HelloWorld::button1ClickCallback, this));  
+void button1ClickCallback(cocos2d::Ref* pSender)
+
+//加载动画：   
+ActionTimeline *action = CSLoader::createTimeline("Node.csb");   
+rootNode->runAction(action);
+//自动旋转
+http://www.cocos.com/doc/tutorial/show?id=2705
+http://www.cocos.com/doc/tutorial/lists?id=63&per_page=9
+#include "editor-support/cocostudio/CCSGUIReader.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
+http://www.cocos.com/doc/tutorial/index?type=cocos
