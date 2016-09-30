@@ -4,13 +4,15 @@ http://www.rpmfind.net/linux/rpm2html/search.php?query=gcc 寻找gcc
 CrashHandler android库使用说明
 gstreamer
 
-Button *button1 = static_cast<Button*>(m_csbNode->getChildByName("Button_1"));  
-button1->addClickEventListener(CC_CALLBACK_1(HelloWorld::button1ClickCallback, this));  
-void button1ClickCallback(cocos2d::Ref* pSender)
+ANDROID_SDK=/home/lpserver/Android/Sdk
+ANDROID_NDK=/home/lpserver/Android/Sdk/ndk-bundle/android-ndk-r11c
+JAVA_HOME=/home/lpserver/workspace_env/jdk1.8.0_101
+JRE_HOME=/home/lpserver/workspace_env/jdk1.8.0_101
+MAVEN_HOME=/opt/apache-maven-3.3.9
+PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$MAVEN_HOME/bin:$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools
+CLASSPATH=:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+export JAVA_HOME JRE_HOME CLASSPATH ANDROID_SDK ANDROID_NDK 
 
-//加载动画：   
-ActionTimeline *action = CSLoader::createTimeline("Node.csb");   
-rootNode->runAction(action);
 //自动旋转
 http://www.cocos.com/doc/tutorial/show?id=2705
 http://www.cocos.com/doc/tutorial/lists?id=63&per_page=9
